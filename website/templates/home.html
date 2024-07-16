@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %} 
+
+<h1>welcome {{user.user_name}}</h1>
+<h2>Order Form</h2>
+<div class="order form">
+  <form method="POST" class="form-group" >
+
+    <label for="customer_name">Customer Name:</label>
+    <input type="text" class="form-control" id="customer_name" name="customer_name" required><br>
+  
+    <label for="mango">Mango:</label>
+    <input type="number" class="form-control" id="mango" name="mango" min="0" value="0"><br>
+  
+    <label for="orange">Orange:</label>
+    <input type="number" class="form-control" id="orange" name="orange" min="0" value="0"><br>
+  
+    <label for="banana">Banana:</label>
+    <input type="number" class="form-control" id="banana" name="banana" min="0" value="0"><br>
+  
+    <input type="submit"  class="btn btn-primary" value="Submit Order">
+   <!--<div>
+      <ul>
+        {% for order in user.order %}
+        <li>{{order.customer_name}} {{ order.collector_name }}
+        {% endfor %}
+      </ul>
+    </div>--> 
+  </form>
+
+
+
+
+
+{% endblock %}
+

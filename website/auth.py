@@ -55,7 +55,7 @@ def sign_up():
         elif len(password1) < 7:
             flash('Password must be at least 7 characters.', category='error')
         elif not registration:
-            flash('you are not registred', category='error')
+            flash('you are not registred id '+str(email), category='error')
         else:
             new_user = User(email=email, user_name=first_name, password=password1)
             db.session.add(new_user)

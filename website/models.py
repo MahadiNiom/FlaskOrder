@@ -27,5 +27,4 @@ class Order(db.Model):
 
 
 class R_code(db.Model):
-    
     email = db.Column(db.String(50), primary_key = True)

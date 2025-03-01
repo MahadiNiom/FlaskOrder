@@ -27,7 +27,7 @@ Execute below Query:
 
 Now you can sign in using "youremail@any.any" and place an order.
 
-Your order information will be saved in "order" table.
+Your order information will be saved in "order" table of instance/database.db file.
 
 
 
